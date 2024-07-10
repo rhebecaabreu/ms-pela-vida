@@ -1,12 +1,14 @@
 import React from "react";
 import Routes from "routes";
-import Navbar from "./components/organisms/Navbar";
+import Header from "./components/organisms/Header";
+import Footer from "components/organisms/Footer";
 
 function App() {
   return (
     <>
-      <Navbar />
+      <Header />
       <Routes />
+      <Footer />
     </>
   );
 }
