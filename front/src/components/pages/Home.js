@@ -9,6 +9,12 @@ import Heading from "components/atoms/Heading";
 import Grid from "components/atoms/Grid";
 import Button from "components/atoms/Button";
 import TruckImage from "../../assets/notice.png";
+import Slider from "components/atoms/Slider";
+import ImageSlider1 from "../../assets/slide1.png";
+import ImageSlider2 from "../../assets/slide2.png";
+import ImageSlider3 from "../../assets/slide3.png";
+
+const sliderImages = [ImageSlider1, ImageSlider2, ImageSlider3];
 
 const Image = styled.div`
   display: flex;
@@ -29,7 +35,9 @@ const Home = () => {
       <Hero image={Banner} />
       <Section>
         <Grid md={2}>
-          <div>slider</div>
+          <div>
+            <Slider images={sliderImages} />
+          </div>
           <div>
             <Heading>
               <h1 id="about">
