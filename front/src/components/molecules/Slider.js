@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import PrevIcon from "../../assets/prev.svg";
+import NextIcon from "../../assets/next.svg";
 
 const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 44px;
-
+  background: #fff;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border-radius: 16px;
+  margin-right: 40px;
   img {
     max-width: 361px;
     border-radius: 8px;
@@ -27,6 +32,7 @@ const Button = styled.button`
   border: none;
   box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
   margin-right: 40px;
+  cursor: pointer;
 `;
 
 const Slider = ({ images }) => {
@@ -51,8 +57,12 @@ const Slider = ({ images }) => {
         <img src={image} alt="" />
       </div>
       <CardActions>
-        <Button onClick={prevImage}>{"<"}</Button>
-        <Button onClick={nextImage}>{">"}</Button>
+        <Button onClick={prevImage}>
+          <img src={PrevIcon} alt="" />
+        </Button>
+        <Button onClick={nextImage}>
+          <img src={NextIcon} alt="" />
+        </Button>
       </CardActions>
     </Card>
   );

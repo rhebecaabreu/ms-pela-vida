@@ -9,10 +9,11 @@ import Heading from "components/atoms/Heading";
 import Grid from "components/atoms/Grid";
 import Button from "components/atoms/Button";
 import TruckImage from "../../assets/notice.png";
-import Slider from "components/atoms/Slider";
+import Slider from "components/molecules/Slider";
 import ImageSlider1 from "../../assets/slide1.png";
 import ImageSlider2 from "../../assets/slide2.png";
 import ImageSlider3 from "../../assets/slide3.png";
+import PlusIcon from "../../assets/plus.svg";
 
 const sliderImages = [ImageSlider1, ImageSlider2, ImageSlider3];
 
@@ -33,7 +34,7 @@ const Home = () => {
   return (
     <>
       <Hero image={Banner} />
-      <Section>
+      <Section inverse>
         <Grid md={2}>
           <div>
             <Slider images={sliderImages} />
@@ -91,7 +92,10 @@ const Home = () => {
                 Sul do país.
               </strong>
             </p>
-            <Button>Quero participar</Button>
+            <Button>
+              <img src={PlusIcon} alt="" />
+              Quero participar
+            </Button>
           </div>
           <div>
             <Image image={TruckImage} />

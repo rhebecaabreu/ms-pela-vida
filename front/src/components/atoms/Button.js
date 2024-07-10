@@ -5,7 +5,21 @@ export const ButtonsVariants = {
   default: "default",
 };
 
-const ButtonStyled = styled.button``;
+const ButtonStyled = styled.button`
+  background: #1274ce;
+  text-transform: uppercase;
+  padding: 8px 22px;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 2px 0px #00000024;
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+`;
 
 const ButtonDefault = (props) => {
   return <ButtonStyled {...props} />;

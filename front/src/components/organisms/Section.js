@@ -12,7 +12,7 @@ const Content = styled.div`
   ${(props) =>
     props.inverse &&
     css`
-      background-color: #f7f7f7;
+      background-color: #eefbff;
     `}
   ${breakAt(BreakpointSizes.md)} {
     padding: 80px 0;
