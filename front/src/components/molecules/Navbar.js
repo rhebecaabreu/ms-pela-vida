@@ -15,11 +15,17 @@ const Button = styled(NavbarButton)`
 `;
 
 const Navbar = () => {
+  const scrollInto = (anchor) => {
+    const element = document.getElementById(anchor);
+
+    element.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <Container>
-      <Button>Sobre o projeto</Button>
-      <Button>Inscrições</Button>
-      <Button>Painel Admin</Button>
+      <Button onClick={() => scrollInto("about")}>Sobre o projeto</Button>
+      <Button onClick={() => scrollInto("subscribe")}>Inscrições</Button>
+      <Button>Painel Adm</Button>
     </Container>
   );
 };

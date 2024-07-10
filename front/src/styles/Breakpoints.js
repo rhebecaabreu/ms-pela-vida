@@ -5,4 +5,5 @@ export const BreakpointSizes = {
   xl: 1200,
 };
 
-export const breakAt = (size) => `@media (min-width: ${size}px)`;
+export const breakAt = (size, type = "min") =>
+  `@media (${type}-width: ${size}px)`;

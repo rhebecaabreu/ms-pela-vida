@@ -7,6 +7,8 @@ import { breakAt, BreakpointSizes } from "styles/Breakpoints";
 
 const Content = styled.div`
   padding: 40px 0;
+  color: #5b6069;
+
   ${(props) =>
     props.inverse &&
     css`
@@ -14,9 +16,6 @@ const Content = styled.div`
     `}
   ${breakAt(BreakpointSizes.md)} {
     padding: 80px 0;
-  }
-  h2 {
-    margin-top: 0;
   }
 `;
 

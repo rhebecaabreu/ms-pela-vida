@@ -20,10 +20,10 @@ const Logo = styled.img`
 
 const AccessibilityButton = styled.div`
   display: flex;
-  width: 140px;
+  width: 80px;
   background-image: url(${(props) => props.image});
   background-position: center center;
-  background-size: auto;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 40px;
 `;
